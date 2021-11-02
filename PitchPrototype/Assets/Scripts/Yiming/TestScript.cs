@@ -23,7 +23,8 @@ public class TestScript : MonoBehaviour
         }
         if(lastFocus != null)
         {
-            targetPlace = this.transform.position;
+            targetPlace = (this.transform.position + lastFocus.transform.position) / 2;
+            
         }
     }
 }
